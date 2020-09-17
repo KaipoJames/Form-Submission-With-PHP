@@ -1,0 +1,16 @@
+/* <----- HEADER STYLES -----> */
+
+/* <----- REGISTER STYLES -----> */
+.error-msg {
+  color: red;
+  border: 1px solid red;
+  width: 45%;
+}
+.error-label {
+  color: red;
+}
+.normal-label {
+  color: black;
+}
+
+/* <----- FOOTER STYLES -----> */
