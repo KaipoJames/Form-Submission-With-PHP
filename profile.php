@@ -10,7 +10,7 @@
 <body>
     <?php
     include("header.php");
-    include("functions.php");
+    //include("functions.php");
     include("ch_title.php");
 
     $db = connect_to_DB();
