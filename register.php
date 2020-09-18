@@ -16,7 +16,7 @@
     <?php
     include("header.php");
 
-    //$db = connect_to_DB();
+    $db = connect_to_DB();
 
     $valid_post = true;
     $error_msg = "";
@@ -42,11 +42,8 @@
             $error_msg .= "Email is too long</br>";
             $email_error = true;
         }
-        if ($valid_post) {
-            include("functions.php");
-        }
 
-        /* if ($valid_post) {
+        if ($valid_post) {
             $hashed_password = sha1($_POST['password']);
             $sql_query = "INSERT INTO users (name,email,hashed_password) VALUES (";
             $sql_query .= "'" . $_POST['name'] . "','" . $_POST['email'] . "','$hashed_password');";
@@ -58,7 +55,7 @@
                 $error_msg .= "</br>Email already Registered</br>";
                 $email_error = true;
             }
-        } */
+        }
 
         if (!$valid_post) {
             $name = $_POST["name"];
@@ -84,7 +81,7 @@
         <?php
             }
             ?>
-        <form action="registered.php" method="post" class="form">
+        <form action="register.php" method="post" class="form">
             <span class="<?php echo ($name_length_error) ? "error-label" : "normal-label"; ?> ">Name:</span>
             <input type="text" name="name" value="<?php echo $name ?>" required></br>
             <span class="<?php echo ($email_error) ? "error-label" : "normal-label"; ?> ">Email:</span> <input
