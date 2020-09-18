@@ -11,6 +11,7 @@
     <?php
     include("header.php");
     include("functions.php");
+    include("ch_title.php");
 
     $db = connect_to_DB();
 
@@ -33,7 +34,11 @@
         EMAIL: <?php echo $member["email"]; ?></br>
         PASSWORD: <?php echo $member["password"]; ?></br>
     </div>
+
     <?php
+    $title = $member["name"];
+    modify_title($title);
+
     include("footer.php");
     ?>
 </body>
