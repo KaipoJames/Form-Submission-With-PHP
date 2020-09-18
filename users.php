@@ -49,6 +49,7 @@
     </table>
     <?php
     }
+    displayDatabaseUsers();
 
 
     include('footer.php');
