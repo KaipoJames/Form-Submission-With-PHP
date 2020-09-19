@@ -13,8 +13,10 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="./questions.php">Q&A</a></li>
             <li><a href="./users.php">Members</a></li>
             <li><a href="./register.php">Register</a></li>
+
         </ul>
     </header>
 </body>
